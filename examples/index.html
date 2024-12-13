@@ -43,6 +43,7 @@
       type="text/javascript"
     >
       const reportInternalUsageAttributionId = true;
+      const INTERNAL_USAGE_ATTRIBUTION_ID = ["gmp-aux-api-loader"];
       const mapOptions = {
         center: {
           lat: 0,
@@ -50,7 +51,7 @@
         },
         zoom: 4,
         mapId: "DEMO_MAP_ID",
-        internalUsageAttributionId: reportInternalUsageAttributionId ? ["gmp-aux-api-loader"] : []
+        internalUsageAttributionId: reportInternalUsageAttributionId ? INTERNAL_USAGE_ATTRIBUTION_ID : []
       };
 
       const loader = new google.maps.plugins.loader.Loader({
